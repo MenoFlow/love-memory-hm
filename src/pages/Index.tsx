@@ -18,16 +18,16 @@ const Index = () => {
 
   const { images: storyImages, loading } = useImageMetadata(imagePaths);
 
-  if (loading) {
-    return (
-      <div className="min-h-screen gradient-soft flex items-center justify-center">
-        <div className="text-center">
-          <Heart className="h-12 w-12 text-romantic-pink mx-auto mb-4 heart-float" fill="currentColor" />
-          <p className="text-lg text-muted-foreground">Chargement de nos souvenirs... 💕</p>
-        </div>
-      </div>
-    );
-  }
+  // if (loading) {
+  //   return (
+  //     <div className="min-h-screen gradient-soft flex items-center justify-center">
+  //       <div className="text-center">
+  //         <Heart className="h-12 w-12 text-romantic-pink mx-auto mb-4 heart-float" fill="currentColor" />
+  //         <p className="text-lg text-muted-foreground">Chargement de nos souvenirs... 💕</p>
+  //       </div>
+  //     </div>
+  //   );
+  // }
 
   return (
     <div className="min-h-screen gradient-soft">
