@@ -77,11 +77,11 @@ const Carousel = ({ images }: CarouselProps) => {
   
                   {index === currentIndex && (
                     <div className="absolute inset-x-0 bottom-[4%] bg-gradient-to-t from-black/70 via-black/40 to-transparent px-4 py-3 rounded-lg">
-                      <h3 className="text-white text-base font-semibold leading-snug" style={{ fontFamily: 'Playfair Display, serif' }}>
+                      {/* <h3 className="text-white text-base font-semibold leading-snug" style={{ fontFamily: 'Playfair Display, serif' }}>
                         {image.caption}
-                      </h3>
+                      </h3> */}
                       <div className="flex items-center justify-between text-white/90 text-sm leading-none">
-                        <p>📅 {image.date}</p>
+                        {/* <p>📅 {image.date}</p> */}
                         <p>📍 {image.location}</p>
                       </div>
                     </div>

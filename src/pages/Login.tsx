@@ -165,7 +165,7 @@ const Login = ({ onLogin }: LoginProps) => {
               Tu es sûre ? 🥺
             </h3>
             <p className="text-muted-foreground mb-6">
-              Réfléchis bien à ta réponse mon cœur...
+              Réfléchis bien à ta réponse Tchoupilumie...
             </p>
             <Button
               onClick={handleModalClose}

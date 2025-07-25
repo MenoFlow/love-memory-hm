@@ -49,14 +49,14 @@ const Index = () => {
             <div className="flex items-center justify-center gap-4 mb-6">
               <Heart className="h-8 w-8 text-romantic-pink heart-float" fill="currentColor" />
               <h1 className="text-4xl md:text-6xl font-bold text-foreground" style={{ fontFamily: 'Playfair Display, serif' }}>
-                Notre page du destin
+              La page de notre destin
               </h1>
               <Heart className="h-8 w-8 text-romantic-pink heart-float" fill="currentColor" />
             </div>
             
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed" style={{ fontFamily: 'Inter, sans-serif' }}>
-              Bienvenue dans notre univers amoureux. Chaque image est un souvenir précieux, 
-              chaque moment capturé raconte notre histoire unique et éternelle.
+              Bienvenue dans notre univers. Chaque image est un souvenir précieux, 
+              chaque moment capturé raconte une part de notre histoire.
             </p>
             
             <div className="flex flex-col items-center gap-4 mt-6">

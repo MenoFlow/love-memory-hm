@@ -7,10 +7,16 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Login from "./pages/Login";
+import useImageMetadata from '@/hooks/useImageMetadata';
+
 
 const queryClient = new QueryClient();
 
 const App = () => {
+
+  const imagePaths = Array.from({ length: 72 }, (_, i) => `/images/H-M${i + 1}.jpg`);
+
+  const { images: storyImages, loading } = useImageMetadata(imagePaths);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   useEffect(() => {

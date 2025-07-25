@@ -70,7 +70,7 @@ const AboutSection = () => {
 
           <div className="flex items-center justify-center gap-2 mt-6">
             <Star className="h-5 w-5 text-romantic-lavender" fill="currentColor" />
-            <span className="text-muted-foreground font-medium">Ensemble depuis Mai 2021</span>
+            <span className="text-muted-foreground font-medium">Ensemble depuis Janvier 2025</span>
             <Star className="h-5 w-5 text-romantic-lavender" fill="currentColor" />
           </div>
 

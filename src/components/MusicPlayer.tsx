@@ -9,10 +9,10 @@ interface MusicPlayerProps {
 
 // Liste des pistes audio
 const playlist = [
-  { title: "Cliché", src: "/audio/clicher.mp3" },
   { title: "Promesse", src: "/audio/promesse.mp3" },
-  { title: "Ma grenouillette", src: "/audio/grenouillette.mp3" },
   { title: "Harleys in Hawai", src: "/audio/harleys_in_hawai.mp3" },
+  { title: "Ma grenouillette", src: "/audio/grenouillette.mp3" },
+  { title: "Cliché", src: "/audio/clicher.mp3" },
   { title: "That should be me", src: "/audio/that_should_be_me.mp3" },
 ];
 

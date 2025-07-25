@@ -9,7 +9,7 @@ const LogoutButton = () => {
   const handleLogout = () => {
     localStorage.removeItem('isAuthenticated');
     toast({
-      title: "À bientôt mon Tchoupii 💕",
+      title: "À bientôt ma Tchoupii 💕",
       description: "Tu me manques déjà...",
     });
     
