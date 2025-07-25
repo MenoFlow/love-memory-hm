@@ -69,7 +69,7 @@ const VideoPlayer = ({ images, onVideoStateChange }: VideoPlayerProps) => {
       } else {
         stopPlayback();
       }
-    }, 2000);
+    }, 2500);
   };
 
   const downloadVideo = () => {
@@ -108,7 +108,7 @@ const VideoPlayer = ({ images, onVideoStateChange }: VideoPlayerProps) => {
           <div className="relative">
             <div className="relative aspect-[3/4] bg-black rounded-lg overflow-hidden">
               <audio ref={videoAudioRef} loop preload="auto">
-                <source src="/audio/promesse.mp3" type="audio/mpeg" />
+                <source src="/audio/clicher.mp3" type="audio/mpeg" />
               </audio>
 
               <img
@@ -147,7 +147,7 @@ const VideoPlayer = ({ images, onVideoStateChange }: VideoPlayerProps) => {
                 {isPlaying ? (
                   <>
                     <RotateCcw className="h-5 w-5" />
-                    Reinitialiser
+                    Repeter
                   </>
                 ) : (
                   <>
@@ -162,6 +162,7 @@ const VideoPlayer = ({ images, onVideoStateChange }: VideoPlayerProps) => {
                 size="lg"
                 onClick={downloadVideo}
                 className="flex items-center gap-2"
+                disabled={true}
               >
                 <Download className="h-5 w-5" />
                 Télécharger

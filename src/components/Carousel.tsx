@@ -74,42 +74,40 @@ const Carousel = ({ images }: CarouselProps) => {
                     alt={image.caption}
                     className="w-full h-full object-cover rounded-lg shadow-xl"
                   />
-
+  
                   {index === currentIndex && (
-                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-4 rounded-b-lg">
-                      <h3 className="text-white text-lg font-semibold mb-1" style={{ fontFamily: 'Playfair Display, serif' }}>
+                    <div className="absolute inset-x-0 bottom-[4%] bg-gradient-to-t from-black/70 via-black/40 to-transparent px-4 py-3 rounded-lg">
+                      <h3 className="text-white text-base font-semibold leading-snug" style={{ fontFamily: 'Playfair Display, serif' }}>
                         {image.caption}
                       </h3>
-                      <div className="flex items-center justify-between text-white/90 text-sm">
+                      <div className="flex items-center justify-between text-white/90 text-sm leading-none">
                         <p>📅 {image.date}</p>
                         <p>📍 {image.location}</p>
                       </div>
-                      <p className="text-white/80 text-xs mt-1 italic">
-                        {image.description}
-                      </p>
                     </div>
+
                   )}
                 </div>
               </div>
             ))}
           </div>
         </div>
-
+  
         <Button variant="secondary" size="icon" className="absolute left-4 top-1/2 -translate-y-1/2 z-20 bg-white/20 backdrop-blur-sm border-white/30 hover:bg-white/30 text-romantic-pink" onClick={goToPrevious}>
           <ChevronLeft className="h-6 w-6" />
         </Button>
-
+  
         <Button variant="secondary" size="icon" className="absolute right-4 top-1/2 -translate-y-1/2 z-20 bg-white/20 backdrop-blur-sm border-white/30 hover:bg-white/30 text-romantic-pink" onClick={goToNext}>
           <ChevronRight className="h-6 w-6" />
         </Button>
-
+  
         <Button variant="secondary" size="icon" className="absolute bottom-4 right-4 z-20 bg-white/20 backdrop-blur-sm border-white/30 hover:bg-white/30 text-romantic-pink" onClick={togglePlayPause}>
           {isPlaying ? <Pause className="h-5 w-5" /> : <Play className="h-5 w-5" />}
         </Button>
-
+  
         <Heart className="absolute top-8 right-8 h-8 w-8 text-romantic-pink heart-float z-20" fill="currentColor" />
       </div>
-
+  
       <div className="flex justify-center space-x-2 p-6">
         {images.map((_, index) => (
           <button
@@ -125,6 +123,7 @@ const Carousel = ({ images }: CarouselProps) => {
       </div>
     </div>
   );
+  
 };
 
 export default Carousel;

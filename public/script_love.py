@@ -28,7 +28,7 @@ jpg_files.sort(key=get_creation_time)
 
 # Renommer les fichiers
 for index, file_path in enumerate(jpg_files, start=1):
-    new_name = f"hm{index}.jpg"
+    new_name = f"H-M{index}.jpg"
     new_path = os.path.join(folder_path, new_name)
     os.rename(file_path, new_path)
 
